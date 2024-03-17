@@ -1,0 +1,11 @@
+CHUNK_SIZE: 100
+CHUNK_OVERLAP: 20
+NUM_RESULTS: 2
+DATA_PATH: 'data/'
+EMBEDDINGS: 'sentence-transformers/all-mpnet-base-v2'
+VECTOR_DB: 'vectorstore/sparrow'
+NORMALIZE_EMBEDDINGS: True
+COLLECTION_NAME: 'sparrow'
+DEVICE: 'cpu'
+VECTOR_SPACE: 'cosine'
+LLM: 'llama2'
