@@ -1,0 +1,13 @@
+version: '1'
+services:
+  ollama-container:
+    image: ollama/ollama:latest
+    volumes:
+      - ./data/ollama:/root/.ollama
+    ports:
+      - 11434:11434
+  streamlit-app:
+    image: viprasingh/ollama-langchain:0.1
+    ports:
+      - 8501:8501
+
